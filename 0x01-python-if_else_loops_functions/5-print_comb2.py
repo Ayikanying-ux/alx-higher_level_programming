@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for num in range(0, 99):
-    print('{:02d}, '.format(num), end='')
-print('99')
+for i in range(100):
+    print("{:d}".format(i).rjust(2, "0"),
+          end="\n" if i == 99 else ", ")
